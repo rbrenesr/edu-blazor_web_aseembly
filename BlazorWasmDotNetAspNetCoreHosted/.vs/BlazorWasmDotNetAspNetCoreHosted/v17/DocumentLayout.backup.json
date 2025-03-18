@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorWasmDotNetAspNetCoreHosted\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21D7D28F-7C74-483F-BD3C-B5D86453F2DC}|BlazorWasmDotNetAspNetCoreHosted.Server\\BlazorWasmDotNetAspNetCoreHosted.Server.csproj|c:\\_rbrenes\\@r\\apredizaje\\edu-blazor_web_aseembly\\blazorwasmdotnetaspnetcorehosted\\blazorwasmdotnetaspnetcorehosted.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D7D28F-7C74-483F-BD3C-B5D86453F2DC}|BlazorWasmDotNetAspNetCoreHosted.Server\\BlazorWasmDotNetAspNetCoreHosted.Server.csproj|solutionrelative:blazorwasmdotnetaspnetcorehosted.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE668E99-D4BE-4AA7-B7B9-56CF4CD070CE}|BlazorWasmDotNetAspNetCoreHosted.Client\\BlazorWasmDotNetAspNetCoreHosted.Client.csproj|c:\\_rbrenes\\@r\\apredizaje\\edu-blazor_web_aseembly\\blazorwasmdotnetaspnetcorehosted\\blazorwasmdotnetaspnetcorehosted.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE668E99-D4BE-4AA7-B7B9-56CF4CD070CE}|BlazorWasmDotNetAspNetCoreHosted.Client\\BlazorWasmDotNetAspNetCoreHosted.Client.csproj|solutionrelative:blazorwasmdotnetaspnetcorehosted.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorWasmDotNetAspNetCoreHosted\\BlazorWasmDotNetAspNetCoreHosted.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "BlazorWasmDotNetAspNetCoreHosted.Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorWasmDotNetAspNetCoreHosted\\BlazorWasmDotNetAspNetCoreHosted.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "BlazorWasmDotNetAspNetCoreHosted.Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T22:55:53.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorWasmDotNetAspNetCoreHosted\\BlazorWasmDotNetAspNetCoreHosted.Client\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "BlazorWasmDotNetAspNetCoreHosted.Client\\Pages\\Weather.razor",
+              "ToolTip": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorWasmDotNetAspNetCoreHosted\\BlazorWasmDotNetAspNetCoreHosted.Client\\Pages\\Weather.razor",
+              "RelativeToolTip": "BlazorWasmDotNetAspNetCoreHosted.Client\\Pages\\Weather.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-17T22:55:39.337Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

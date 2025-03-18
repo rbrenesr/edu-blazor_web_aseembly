@@ -1,0 +1,12 @@
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\bin\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.deps.json
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\bin\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.dll
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\bin\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.pdb
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.AssemblyInfoInputs.cache
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.AssemblyInfo.cs
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.csproj.CoreCompileInputs.cache
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.sourcelink.json
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.dll
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\refint\BlazorWasmDotNetAspNetCoreHosted.Shared.dll
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\BlazorWasmDotNetAspNetCoreHosted.Shared.pdb
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorWasmDotNetAspNetCoreHosted\BlazorWasmDotNetAspNetCoreHosted.Shared\obj\Debug\net8.0\ref\BlazorWasmDotNetAspNetCoreHosted.Shared.dll
