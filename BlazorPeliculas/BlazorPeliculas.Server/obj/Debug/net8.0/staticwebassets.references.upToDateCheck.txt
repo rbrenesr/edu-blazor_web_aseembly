@@ -1,0 +1,5 @@
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorPeliculas\BlazorPeliculas.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorPeliculas\BlazorPeliculas.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorPeliculas\BlazorPeliculas.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorPeliculas\BlazorPeliculas.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\_rbrenes\@r\Apredizaje\edu-blazor_web_aseembly\BlazorPeliculas\BlazorPeliculas.Client\obj\Debug\net8.0\staticwebassets.build.json
