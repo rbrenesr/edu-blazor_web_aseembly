@@ -13,7 +13,8 @@
 
 
 
-<br /><br />
+<br />
+<br />
 <h1>Representar una Película</h1>
 
 <div>
@@ -23,46 +24,79 @@
 </div>
 
 
-<br /><br />
+<br />
+<br />
 <h1>Películas con foreach</h1>
 
-<div>
-    <h3>Película</h3>
-    @foreach (var pelicula in ObtenerPeliculas())
-    {
-        <div>
-            <p>Título: <b> @pelicula.Titulo</b></p>
-            <p>Fecha lanzamiento: <b>@pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
-        </div>
-        <hr />
-    }
-</div>
+
+@if (Peliculas is null)
+{
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
+}
+else if (Peliculas.Count == 0)
+{
+    <p>No hay películas para mostrar!!</p>
+}
+else
+{
+
+    <div>
+        <h3>Película</h3>
+        @foreach (var pelicula in ObtenerPeliculas())
+        {
+            <div>
+                <p>Título: <b> @pelicula.Titulo</b></p>
+
+                @if (DateTime.Today.Subtract(pelicula.FechaLanzamiento).Days <= 14)
+                {
+                    <span class="bg-danger">Nuevo!</span>
+                }
 
 
-<br />
-<br />
-<h1>Películas con for</h1>
-
-<div>
-    <h3>Película</h3>
-
-
-    @for (int i = 0; i < Peliculas.Count; i++)
-    {
-        <div>
-            <p>@(i + 1)) Título: <b> @Peliculas[i].Titulo</b></p>
-            <p>Fecha lanzamiento: <b>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
-        </div>
-        <hr />
-    }
+                <p>Fecha lanzamiento: <b>@pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
+            </div>
+            <hr />
+        }
+    </div>
 
 
-</div>
+    <br />
+    <br />
+    <h1>Películas con for</h1>
+
+    <div>
+        <h3>Película</h3>
+
+
+        @for (int i = 0; i < Peliculas.Count; i++)
+        {
+            <div>
+                <p>@(i + 1)) Título: <b> @Peliculas[i].Titulo</b></p>
+                <p>Fecha lanzamiento: <b>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
+            </div>
+            <hr />
+        }
+
+
+    </div>
+}
+
+
+
 
 @code {
     string nombre = "Rafael Brenes";
     Pelicula Batman { get { return ObtenerPelicula(); } }
-    List<Pelicula> Peliculas { get { return ObtenerPeliculas(); } }
+    List<Pelicula>? Peliculas { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(3000);
+        Peliculas = ObtenerPeliculas();
+        //Peliculas = new List<Pelicula>();
+    }
+
+
 
     void ManejarClicBoton()
     {
@@ -80,10 +114,12 @@
 
     List<Pelicula> ObtenerPeliculas()
     {
+
+
         return new List<Pelicula>() {
             new Pelicula { Titulo ="Pelicula 01", FechaLanzamiento = new DateTime(2023,01,01)},
             new Pelicula { Titulo ="Pelicula 02", FechaLanzamiento = new DateTime(2024,01,01)},
-            new Pelicula { Titulo ="Pelicula 03", FechaLanzamiento = new DateTime(2025,01,01)},
+            new Pelicula { Titulo ="Pelicula 03", FechaLanzamiento = new DateTime(2025,03,14)},
         };
     }
 }
