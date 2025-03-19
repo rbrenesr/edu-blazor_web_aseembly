@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorPeliculas\\",
+  "WorkspaceRootPath": "C:\\_rbrenes\\edu\\edu-blazor_web_aseembly\\BlazorPeliculas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A089654E-D862-4A7F-A0C8-6AE99B03E7F6}|BlazorPeliculas.Client\\BlazorPeliculas.Client.csproj|c:\\_rbrenes\\@r\\apredizaje\\edu-blazor_web_aseembly\\blazorpeliculas\\blazorpeliculas.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A089654E-D862-4A7F-A0C8-6AE99B03E7F6}|BlazorPeliculas.Client\\BlazorPeliculas.Client.csproj|solutionrelative:blazorpeliculas.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A089654E-D862-4A7F-A0C8-6AE99B03E7F6}|BlazorPeliculas.Client\\BlazorPeliculas.Client.csproj|c:\\_rbrenes\\edu\\edu-blazor_web_aseembly\\blazorpeliculas\\blazorpeliculas.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A089654E-D862-4A7F-A0C8-6AE99B03E7F6}|BlazorPeliculas.Client\\BlazorPeliculas.Client.csproj|solutionrelative:blazorpeliculas.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Weather.razor",
-              "DocumentMoniker": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorPeliculas\\BlazorPeliculas.Client\\Pages\\Weather.razor",
-              "RelativeDocumentMoniker": "BlazorPeliculas.Client\\Pages\\Weather.razor",
-              "ToolTip": "C:\\_rbrenes\\@r\\Apredizaje\\edu-blazor_web_aseembly\\BlazorPeliculas\\BlazorPeliculas.Client\\Pages\\Weather.razor",
-              "RelativeToolTip": "BlazorPeliculas.Client\\Pages\\Weather.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAABTAAAAAAAAAA==",
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\_rbrenes\\edu\\edu-blazor_web_aseembly\\BlazorPeliculas\\BlazorPeliculas.Client\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorPeliculas.Client\\Pages\\Home.razor",
+              "ToolTip": "C:\\_rbrenes\\edu\\edu-blazor_web_aseembly\\BlazorPeliculas\\BlazorPeliculas.Client\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorPeliculas.Client\\Pages\\Home.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T12:48:11.116Z",
+              "WhenOpened": "2025-03-18T17:39:35.948Z",
               "EditorCaption": ""
             }
           ]

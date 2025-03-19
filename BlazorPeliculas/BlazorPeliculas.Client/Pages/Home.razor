@@ -1,7 +1,96 @@
 ﻿@page "/"
 
+
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
+<p>Hola @Utildiades.Transformar(nombre), nombre representiada en una variable de scharp</p>
+<p>Vamos a sumar 2 + 2 = @(2 + 2)</p>
+
+<button @onclick=@(()=> { Console.WriteLine("me clikearon"); })>Presioname</button>
+<button @onclick=@ManejarClicBoton>Presioname</button>
+
+
+
+<br /><br />
+<h1>Representar una Película</h1>
+
+<div>
+    <h3>Película</h3>
+    <p>Título: @Batman.Titulo</p>
+    <p>Fecha lanzamiento: @Batman.FechaLanzamiento.ToString("dd MMM yyyy")</p>
+</div>
+
+
+<br /><br />
+<h1>Películas con foreach</h1>
+
+<div>
+    <h3>Película</h3>
+    @foreach (var pelicula in ObtenerPeliculas())
+    {
+        <div>
+            <p>Título: <b> @pelicula.Titulo</b></p>
+            <p>Fecha lanzamiento: <b>@pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
+        </div>
+        <hr />
+    }
+</div>
+
+
+<br />
+<br />
+<h1>Películas con for</h1>
+
+<div>
+    <h3>Película</h3>
+
+
+    @for (int i = 0; i < Peliculas.Count; i++)
+    {
+        <div>
+            <p>@(i + 1)) Título: <b> @Peliculas[i].Titulo</b></p>
+            <p>Fecha lanzamiento: <b>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
+        </div>
+        <hr />
+    }
+
+
+</div>
+
+@code {
+    string nombre = "Rafael Brenes";
+    Pelicula Batman { get { return ObtenerPelicula(); } }
+    List<Pelicula> Peliculas { get { return ObtenerPeliculas(); } }
+
+
+
+    void ManejarClicBoton()
+    {
+        Console.WriteLine("me clikearon btn 2");
+    }
+
+
+    Pelicula ObtenerPelicula()
+    {
+        return new Pelicula
+            {
+                Titulo = "Batman",
+                FechaLanzamiento = new DateTime(2025, 11, 11)
+            };
+    }
+
+
+    List<Pelicula> ObtenerPeliculas()
+    {
+        return new List<Pelicula>() {
+            new Pelicula { Titulo ="Pelicula 01", FechaLanzamiento = new DateTime(2023,01,01)},
+            new Pelicula { Titulo ="Pelicula 02", FechaLanzamiento = new DateTime(2024,01,01)},
+            new Pelicula { Titulo ="Pelicula 03", FechaLanzamiento = new DateTime(2025,01,01)},
+        };
+    }
+
+
+
+}
