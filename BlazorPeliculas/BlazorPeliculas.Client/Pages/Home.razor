@@ -64,13 +64,10 @@
     Pelicula Batman { get { return ObtenerPelicula(); } }
     List<Pelicula> Peliculas { get { return ObtenerPeliculas(); } }
 
-
-
     void ManejarClicBoton()
     {
         Console.WriteLine("me clikearon btn 2");
     }
-
 
     Pelicula ObtenerPelicula()
     {
@@ -81,7 +78,6 @@
             };
     }
 
-
     List<Pelicula> ObtenerPeliculas()
     {
         return new List<Pelicula>() {
@@ -90,7 +86,4 @@
             new Pelicula { Titulo ="Pelicula 03", FechaLanzamiento = new DateTime(2025,01,01)},
         };
     }
-
-
-
 }
