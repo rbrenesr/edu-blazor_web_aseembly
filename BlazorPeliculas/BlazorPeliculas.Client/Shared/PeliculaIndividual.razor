@@ -1,5 +1,5 @@
 ﻿<div>
-    <p>Título: @Pelicula.Titulo</p>
+    <p>Título: @Pelicula!.Titulo</p>
 
     @if (DateTime.Today.Subtract(Pelicula.FechaLanzamiento).Days <= 14)
     {
@@ -13,7 +13,7 @@
 
 @code {
 
-    [Parameter]
+    [Parameter, EditorRequired]
     public Pelicula? Pelicula { get; set; }
 
 }
