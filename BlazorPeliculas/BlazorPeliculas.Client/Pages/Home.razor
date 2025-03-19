@@ -45,7 +45,7 @@ else
         @foreach (var pelicula in ObtenerPeliculas())
         {
             <div>
-                <p>Título: <b> @pelicula.Titulo</b></p>
+                <p>Título: @((MarkupString)pelicula.Titulo)</p>
 
                 @if (DateTime.Today.Subtract(pelicula.FechaLanzamiento).Days <= 14)
                 {
@@ -91,7 +91,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        await Task.Delay(3000);
+        await Task.Delay(1000);
         Peliculas = ObtenerPeliculas();
         //Peliculas = new List<Pelicula>();
     }
@@ -117,8 +117,8 @@ else
 
 
         return new List<Pelicula>() {
-            new Pelicula { Titulo ="Pelicula 01", FechaLanzamiento = new DateTime(2023,01,01)},
-            new Pelicula { Titulo ="Pelicula 02", FechaLanzamiento = new DateTime(2024,01,01)},
+            new Pelicula { Titulo ="<b>Pelicula 01</b>", FechaLanzamiento = new DateTime(2023,01,01)},
+            new Pelicula { Titulo ="<i>Pelicula 02</i>", FechaLanzamiento = new DateTime(2024,01,01)},
             new Pelicula { Titulo ="Pelicula 03", FechaLanzamiento = new DateTime(2025,03,14)},
         };
     }
