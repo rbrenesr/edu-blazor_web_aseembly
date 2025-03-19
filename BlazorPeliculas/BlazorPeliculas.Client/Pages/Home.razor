@@ -6,12 +6,46 @@
 
 <div>
     <h1>Películas</h1>
-    <ListadoPeliculas Peliculas="ObtenerPeliculas()" />
+    <ListadoPeliculas Peliculas="Peliculas" />
 </div>
 
 
 
+<div>
+    <h2>Crear Película</h2>
+
+    @* <EjemploTextbox placeholder="Nombre Película" disabled /> *@
+
+@*     <EjemploTextbox @attributes="@(new Dictionary<string, object>()
+    {
+        {"placeholder","nuevo placeholder"},
+        {"disabled","true"}
+    })" /> *@
+
+    <EjemploTextbox @attributes="parametros" />
+    <EjemploTextbox  />
+
+</div>
+
+
 @code {
+
+
+    public List<Pelicula> Peliculas { get; set; }
+
+
+    private Dictionary<string, object> parametros = new Dictionary<string, object>() {
+        {"placeholder","nuevo placeholder 2"},
+        {"disabled","true"}
+    };
+
+
+
+
+    protected override void OnInitialized()
+    {
+        Peliculas = ObtenerPeliculas();
+    }
 
     List<Pelicula> ObtenerPeliculas()
     {
