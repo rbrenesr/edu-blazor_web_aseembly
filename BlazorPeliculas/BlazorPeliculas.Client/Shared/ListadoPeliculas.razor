@@ -9,8 +9,16 @@ else if (Peliculas.Count == 0)
 else
 {
 
+
     <div>
+        <p>Actualiza el estado de chk con una expresion explicita</p>
         <input type="checkbox" @onchange="@( ()=> MostrarBotones = !MostrarBotones )" />
+        <span>Mostrar botones</span>
+    </div>
+
+    <p>Actualiza el estado de chk con bind</p>
+    <div>
+        <input type="checkbox" @bind="MostrarBotones" />
         <span>Mostrar botones</span>
     </div>
 
