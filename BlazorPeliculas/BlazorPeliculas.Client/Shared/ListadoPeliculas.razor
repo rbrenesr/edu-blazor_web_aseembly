@@ -10,14 +10,19 @@ else
 {
 
     <div>
+        <input type="checkbox" @onchange="@( ()=> MostrarBotones = !MostrarBotones )" />
+        <span>Mostrar botones</span>
+    </div>
+
+    <div>
         <h3>Película</h3>
         @foreach (var pelicula in Peliculas)
         {
-            <PeliculaIndividual Pelicula="pelicula"></PeliculaIndividual>
+            <PeliculaIndividual Pelicula="pelicula" MostrarBotones="MostrarBotones"></PeliculaIndividual>
         }
     </div>
 
-@* 
+    @* 
     <br />
     <br />
     <h1>Películas con for</h1>
@@ -42,5 +47,7 @@ else
 @code {
     [Parameter, EditorRequired]
     public List<Pelicula>? Peliculas { get; set; }   
+
+    public bool MostrarBotones { get; set; }
 
 }
