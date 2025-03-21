@@ -1,4 +1,4 @@
-﻿
+﻿@inject IJSRuntime js
 
 <div>
     <p>Actualiza el estado de chk con una expresion explicita</p>
@@ -38,10 +38,19 @@
 
 
     //creamos un metodo para eliminar una pelicula
-    public void EliminarPelicula(Pelicula pelicula)
+    public async Task EliminarPelicula(Pelicula pelicula)
     {
-        Console.WriteLine($"Eliminando la película");
-        Peliculas!.Remove(pelicula);
+        // var confirmado = await js.InvokeAsync<bool>("confirm", $"Desea borrar la película {pelicula.Titulo} ?");
+        var confirmado = await js.Confirm($"Desea borrar la película {pelicula.Titulo} ?");
+
+
+        if (confirmado)
+        {
+            Console.WriteLine($"Eliminando la película");
+            Peliculas!.Remove(pelicula);
+            
+        }
+       
     }
 
 }
