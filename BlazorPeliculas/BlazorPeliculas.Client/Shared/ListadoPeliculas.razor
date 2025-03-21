@@ -1,73 +1,33 @@
-﻿@if (Peliculas is null)
-{
+﻿
 
-    @if (Cargando is null)
-    {
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
-    }
-    else
-    {
-        @Cargando
-    }
-}
-else if (Peliculas.Count == 0)
-{
-   
+<div>
+    <p>Actualiza el estado de chk con una expresion explicita</p>
+    <input type="checkbox" @onchange="@( ()=> MostrarBotones = !MostrarBotones )" />
+    <span>Mostrar botones</span>
+</div>
+
+<p>Actualiza el estado de chk con bind</p>
+<div>
+    <input type="checkbox" @bind="MostrarBotones" />
+    <span>Mostrar botones</span>
+</div>
 
 
-    @if (SinRegistros is null)
-    {
-       <p>Sin registros para mostrar.</p>
-    }
-    else
-    {
-        @SinRegistros
-    }
-}
-else
-{
+<ListadoGenerico Lista="Peliculas">
+    <Registros>
+        <PeliculaIndividual Pelicula="context" EliminarPelicula="EliminarPelicula" MostrarBotones="MostrarBotones" />
+    </Registros>
+</ListadoGenerico>
 
 
-    <div>
-        <p>Actualiza el estado de chk con una expresion explicita</p>
-        <input type="checkbox" @onchange="@( ()=> MostrarBotones = !MostrarBotones )" />
-        <span>Mostrar botones</span>
-    </div>
 
-    <p>Actualiza el estado de chk con bind</p>
-    <div>
-        <input type="checkbox" @bind="MostrarBotones" />
-        <span>Mostrar botones</span>
-    </div>
-
-    <div>
-        <h3>Película</h3>
-        @foreach (var pelicula in Peliculas)
-        {
-            <PeliculaIndividual Pelicula="pelicula" MostrarBotones="MostrarBotones" EliminarPelicula="EliminarPelicula"></PeliculaIndividual>
-        }
-    </div>
-
-    @* 
-    <br />
-    <br />
-    <h1>Películas con for</h1>
-
-    <div>
-        <h3>Película</h3>
+<ListadoGenerico Lista="Peliculas">
+    <Registros Context="pelicula">
+        <PeliculaIndividual Pelicula="pelicula" EliminarPelicula="EliminarPelicula" MostrarBotones="MostrarBotones" />
+    </Registros>
+</ListadoGenerico>
 
 
-        @for (int i = 0; i < Peliculas.Count; i++)
-        {
-            <div>
-                <p>@(i + 1)) Título: <b> @Peliculas[i].Titulo</b></p>
-                <p>Fecha lanzamiento: <b>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
-            </div>
-            <hr />
-        }
-
-
-    </div> *@
 }
 
 @code {
@@ -75,15 +35,6 @@ else
     public List<Pelicula>? Peliculas { get; set; }
 
     public bool MostrarBotones { get; set; }
-
-    [Parameter]
-    public RenderFragment ChildContent { get; set; } = null!; //Default
-
-    [Parameter]
-    public RenderFragment Cargando { get; set; } = null!;
-
-    [Parameter]
-    public RenderFragment SinRegistros { get; set; } = null!;
 
 
     //creamos un metodo para eliminar una pelicula
