@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject ServicioSingleton Singleton
+@inject IRepositorio Repositorio
 
 
 
@@ -53,15 +54,8 @@
 
     protected override void OnInitialized()
     {
-        Peliculas = ObtenerPeliculas();
+        Peliculas = Repositorio.ObtenerPeliculas();
     }
 
-    List<Pelicula> ObtenerPeliculas()
-    {
-        return new List<Pelicula>() {
-            new Pelicula { Titulo ="Pelicula 01", FechaLanzamiento = new DateTime(2023,01,01)},
-            new Pelicula { Titulo ="Pelicula 02", FechaLanzamiento = new DateTime(2024,01,01)},
-            new Pelicula { Titulo ="Pelicula 03", FechaLanzamiento = new DateTime(2025,03,14)},
-        };
-    }
+   
 }
