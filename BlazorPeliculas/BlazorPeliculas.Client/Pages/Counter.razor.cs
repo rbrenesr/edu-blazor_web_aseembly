@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using BlazorPeliculas.Client.Helpers;
+using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
 namespace BlazorPeliculas.Client.Pages
@@ -15,6 +16,16 @@ namespace BlazorPeliculas.Client.Pages
 
         private int currentCount = 0;
         private static int currentCountStatic = 0;
+
+
+        //[CascadingParameter(Name ="Color")] protected string Color { get; set; } = null!;
+        //[CascadingParameter(Name = "Size")] protected string Size { get; set; } = null!;
+
+        [CascadingParameter] protected AppState appState { get; set; } = null!;
+
+
+
+
 
         private async Task IncrementCount()
         {

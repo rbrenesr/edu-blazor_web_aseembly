@@ -5,10 +5,34 @@
 
 <h1>Counter</h1>
 
+<h2 style="color: @appState.Color">Cambio de color 2 desde CascadingValue</h2>
+
 <button class="btn btn-outline-info" @onclick="IncrementCount"> + </button>
 
-<p role="status">Current count: @currentCount</p>
+<p style="color:@appState.Color; font-size:@appState.Size;" role="status">Current count: @currentCount</p>
 <p role="status">Singleton count: @Singleton.Valor</p>
 <p role="status">Trasient count: @Transient.Valor</p>
 
 
+<hr />
+
+
+<div style="display: flex;">
+    <div style="width: 150px;">
+        <select @bind="@appState.Color" class="form-select mt-4">
+            <option value="green">Verde</option>
+            <option value="red">Rojo</option>
+            <option value="blue">Azul</option>
+        </select>
+    </div>
+</div>
+
+<div style="display: flex;">
+    <div style="width: 150px;">
+        <select @bind="@appState.Size" class="form-select mt-4">
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+        </select>
+    </div>
+</div>
