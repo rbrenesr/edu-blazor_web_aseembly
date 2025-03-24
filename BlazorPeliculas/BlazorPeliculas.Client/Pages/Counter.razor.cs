@@ -9,7 +9,7 @@ namespace BlazorPeliculas.Client.Pages
         [Inject] ServicioTrasient Transient { get; set; } = null!;
 
         [Inject] IJSRuntime JS { get; set; } = null!;
-        IJSObjectReference modulo;
+        IJSObjectReference? modulo;
 
 
 
