@@ -1,73 +1,24 @@
 ﻿@page "/"
-@inject ServicioSingleton Singleton
 @inject IRepositorio Repositorio
 
 
-
-<button class="btn btn-outline-dark" @onclick="LimpiarPeliculas">Limpiar películas</button>
-
-<p role="status">Singleton count: @Singleton.Valor</p>
 <PageTitle>Home</PageTitle>
 
-<HeadContent>        
-    <meta name="description" content="Página de inicio de la aplicación de películas" />
-</HeadContent>
 
 <div>
     <h1>Películas</h1>
-    <ListadoPeliculas Peliculas="Peliculas" @ref="listadoPeliculas" />
+    <ListadoPeliculas Peliculas="Peliculas" />
 </div>
-
-
-
-<div>
-    <h2>Crear Película</h2>
-
-    @* <EjemploTextbox placeholder="Nombre Película" disabled /> *@
-
-    @*     <EjemploTextbox @attributes="@(new Dictionary<string, object>()
-    {
-        {"placeholder","nuevo placeholder"},
-        {"disabled","true"}
-    })" /> *@
-
-    <EjemploTextbox @attributes="parametros" />
-    <EjemploTextbox />
-
-</div>
-
-
-
-<BindEvento></BindEvento>
-<BindGetSet></BindGetSet>
-<BindAfter />
 
 
 
 @code {
 
-
-    public List<Pelicula> Peliculas { get; set; }
-    public ListadoPeliculas? listadoPeliculas;
-
-
-    private Dictionary<string, object> parametros = new Dictionary<string, object>() {
-        {"placeholder","nuevo placeholder 2"},
-        {"disabled","true"}
-    };
-
-
-
+    public List<Pelicula>? Peliculas { get; set; }
 
     protected override void OnInitialized()
     {
-        Peliculas = Repositorio.ObtenerPeliculas();
-       
+        Peliculas = Repositorio.ObtenerPeliculas();       
     }
-
-    void LimpiarPeliculas()
-    {
-        listadoPeliculas!.LimpiarPeliculas();
-    }
-   
+      
 }

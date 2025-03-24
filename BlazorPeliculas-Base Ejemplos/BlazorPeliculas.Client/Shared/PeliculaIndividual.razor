@@ -1,0 +1,48 @@
+﻿<div>
+    <p>Título: @Pelicula!.Titulo</p>
+
+    @if (DateTime.Today.Subtract(Pelicula.FechaLanzamiento).Days <= 14)
+    {
+        <span class="bg-danger">Nuevo!</span>
+    }
+
+
+    <p>Fecha lanzamiento: <b>@Pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
+
+
+    @if (MostrarBotones)
+    {
+        <div>
+            <button class="btn btn-outline-danger"
+                    @onclick="@( ()=> EliminarPelicula.InvokeAsync(Pelicula) )">
+                <i class="bi bi-trash3"></i>
+                Borrar
+            </button>
+        </div>
+
+    }
+
+
+
+</div>
+<hr />
+
+@code {
+
+    [Parameter, EditorRequired]
+    public Pelicula? Pelicula { get; set; }
+
+    [Parameter]
+    public bool MostrarBotones { get; set; }
+
+    [Parameter]
+    public EventCallback<Pelicula> EliminarPelicula { get; set; }
+
+
+    void Borrar()
+    {
+        Console.WriteLine($"Eliminando la película {Pelicula.Titulo}");
+    }
+
+
+}

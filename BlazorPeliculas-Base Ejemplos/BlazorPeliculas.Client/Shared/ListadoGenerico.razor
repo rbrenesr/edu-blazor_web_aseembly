@@ -1,0 +1,51 @@
+﻿@typeparam TItem
+
+@if (Lista is null)
+{
+
+    @if (Cargando is null)
+    {
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
+    }
+    else
+    {
+        @Cargando
+    }
+}
+else if (Lista.Count == 0)
+{
+
+
+
+    @if (SinRegistros is null)
+    {
+        <p>Sin registros para mostrar.</p>
+    }
+    else
+    {
+        @SinRegistros
+    }
+}
+else
+{
+    @foreach (var item in Lista)
+    {        
+        @Registros(item)
+    }
+}
+
+@code {
+
+    [Parameter]
+    public RenderFragment Cargando { get; set; } = null!;
+
+    [Parameter]
+    public RenderFragment SinRegistros { get; set; } = null!;    
+
+    [Parameter, EditorRequired]
+    public List<TItem>? Lista { get; set; }
+
+    [Parameter]
+    public RenderFragment<TItem> Registros { get; set; } = null!;
+
+}
