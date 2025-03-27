@@ -1,6 +1,24 @@
 ﻿@page "/generos/crear"
-<h3>CrearGenero</h3>
+<h3>Crear Genero</h3>
+
+<EditForm Model="Genero" OnSubmit="Crear">
+
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <InputText id="nombre" class="form-control" @bind-Value="Genero.Nombre"></InputText>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear</button>
+
+</EditForm>
+
 
 @code {
+    private Genero Genero = new Genero();
+
+    private async Task Crear()
+    {
+        Console.WriteLine("Genero: " + Genero.Nombre);
+    }
 
 }
