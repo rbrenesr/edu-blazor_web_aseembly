@@ -1,11 +1,12 @@
 ﻿@page "/generos/crear"
 <h3>Crear Genero</h3>
 
-<EditForm Model="Genero" OnSubmit="Crear">
-
+<EditForm Model="Genero" OnValidSubmit="Crear">
+    <DataAnnotationsValidator />
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
         <InputText id="nombre" class="form-control" @bind-Value="Genero.Nombre"></InputText>
+        <ValidationMessage For="@( ()=> Genero.Nombre )"></ValidationMessage>
     </div>
 
     <button type="submit" class="btn btn-primary">Crear</button>
